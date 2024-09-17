@@ -1,12 +1,19 @@
+//printing numbers 1 to 10 using while loop
 #include <stdio.h>
 
 int main () {
-    int i=1;
-     
+
+   //nitialization_expression;
+    int i=1; 
+
+     // while (test_expression)
      while (i<11) {
+
+    // this is the body of while loop
          printf("\n%d", i);
-         i++;
-         
-     }
+
+         i++; //you have to update the expression otherwise you will stuck in infinite loop
+          }
+
      return 0;
 }
