@@ -1,1 +1,28 @@
+// ladder if else id used to check multiple conditions.
+// lets check the given number is zero, positive or negative.
+#include <stdio.h>
+ 
+int main()
+{
+    int num = 0;
 
+    scanf("%d",& num);
+    
+    //if num is greater than 0 then this condition will execute.
+    if (num > 0) {
+        printf("Positive");
+    }
+ 
+    // if num is less than 0 then this wll execute.
+    else if (num < 0) {
+        printf("Negative");
+    }
+ 
+    // if num is not positive or negative than this will execute
+    else {
+        printf("Zero");
+    }
+    return 0;
+}
+
+// This code written by -: Pulkit
