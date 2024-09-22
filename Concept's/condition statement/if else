@@ -1,1 +1,16 @@
+//it is a code to check the given number is even or not
+#include <stdio.h>
 
+int main() {
+  int num = 0;
+
+  // scanf is used to taking input from user
+  scanf("%d",& num);
+
+  // here the main if code starts if the num module 2 is zero than the body od if will execute otherwise else will execute.
+  if (num %2 ==0) {
+      printf("It's a even number");
+  } else printf("it's a odd number");
+
+    return 0;
+}
