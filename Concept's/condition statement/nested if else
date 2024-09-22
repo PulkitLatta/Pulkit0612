@@ -1,1 +1,26 @@
+#include  <stdio.h> 
 
+int main() {
+    int isMember = 1; // 1 for member, 0 for non-member
+    float purchaseAmount = 120.0;
+
+    // Check if the customer is a member
+    if (isMember) {
+        // Member is true, check if purchase amount is over Rs.100
+        if (purchaseAmount  >  100) {
+            printf("Discount: 10%%\n");
+        } else {
+            // Purchase amount is Rs.100 or less for a member
+            printf("Discount: 0%%\n");
+        }
+    } else {
+        // Customer is not a member, check if purchase amount is over Rs.150
+        if (purchaseAmount  >  150) {
+            printf("Discount: 5%%\n");
+        } else {
+            // Purchase amount is Rs.150 or less for a non-member
+            printf("Discount: 0%%\n");
+        }
+    }
+    return 0;
+}
